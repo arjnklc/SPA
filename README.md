@@ -27,6 +27,6 @@ Python 3.5.1
 - Run the server on Virtual Machine (VMWare etc.) 
 - On the host computer, add the line below to the hosts file. (/etc/hosts on Linux) - (c:\Windows\System32\Drivers\etc\hosts)
 
-<Virtual Machine IP address>  maila.com
+ \<Virtual Machine IP address\>  maila.com
 
 
