@@ -13,12 +13,14 @@ Load unpacked extension button and select the extension folder.
 # Server Side
 
 ### Dependencies
-pip3 install flask
+Python 3.5.1
 
-pip3 install pycrypto
+\# pip3 install flask
+
+\# pip3 install pycrypto
 
 ### Running
-sudo python3 run.py
+\# sudo python3 run.py
 
 ### Notes
 
