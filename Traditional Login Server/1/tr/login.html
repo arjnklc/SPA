@@ -1,0 +1,31 @@
+
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}" >
+
+<div class="login-page">
+
+
+
+
+  <div class="form">
+  <div class="name">
+	<font> <h3> Mail D </h3></font>
+  </div>
+
+    {% if error %}
+    <font color="red"> <h3> {{ error }} </h3></font> 
+    {% endif %}
+
+
+    <form action="" method="POST" autocomplete="off" name=LOG>
+	  <h3> Lütfen kullanıcı adı ve parolanızı girin </h3>
+    </form>
+
+    <form action="" method="POST" autocomplete="off" name=LOG>
+      <input type="text" name="username" placeholder="kullanıcı adı"/>
+      <input type="password" name="password" placeholder="parola"/>
+      <input type="submit" name="sign-in" value="Giriş"/>
+    </form>
+
+  </div>
+</div>

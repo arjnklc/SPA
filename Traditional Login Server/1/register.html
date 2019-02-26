@@ -1,0 +1,37 @@
+
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}" >
+
+<div class="login-page">
+
+
+  <div class="form">
+
+  <div class="name">
+	<font> <h3> Mail D </h3></font>
+  </div>
+
+	<h5>Your password must be at least 8 characters and contain:</h5>
+	<ul>
+	  <li><h6>a minimum of 1 lower case letter [a-z] and</h6></li>
+	  <li><h6>a minimum of 1 upper case letter [a-z] and</h6></li>
+	  <li><h6>a minimum of 1 numeric character [0-9] and</h6></li>
+	  <li><h6>a minimum of 1 special character: (?, @, !, #, %, +, -, *, %)</h6></li>
+	</ul>
+
+
+    {% if error %}
+    <font color="red"> <h3> {{ error }} </h3></font> 
+    {% endif %}
+
+    <h3>Please create a username and password to sign up</h3>
+
+    <form action="" method="POST" autocomplete="off" name=LOG>
+      <input type="text" name="username" placeholder="username"/>
+      <input type="password" name="password" placeholder="password"/>
+      <input type="password" name="password2" placeholder="confirm password"/>
+      <input type="submit" name="sign-in" value="Sign Up"/>
+    </form>
+
+  </div>
+</div>

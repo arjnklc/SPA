@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="main.css">
+<head>
+
+<script src='CryptoJS-v3.1.2/rollups/aes.js'></script>
+<script src='CryptoJS-v3.1.2/components/enc-utf16-min.js'></script>
+
+<script src='jquery.min.js'> </script>
+
+<script src='jsrsasign-8.0.12/jsrsasign-all-min.js'> </script>
+<script src='jsrsasign-rsa-min.js'> </script>
+
+<script src='popup.js'> </script>
+</head>
+
+
+<div class="main-page">
+
+<div class="form">
+<body>
+<h4 id="errors1">Your password must be at least 8 characters </h4>
+<h4 id="errors2">Your password must contain at least one lowercase. </h4>
+<h4 id="errors3">Your password must contain at least one uppercase. </h4>
+<h4 id="errors4">Your password must contain at least one digit. </h4>
+<h4 id="errors5">Your password must contain at least one special character </h4>
+
+<input type=text id=username placeholder=Username>
+<input type=password id=password placeholder=Password>
+
+<button id=login>Login</button>
+<button id=register>Register</button>
+</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}" >
+
+<div class="login-page">
+
+
+  <div class="form">
+
+  <div class="name">
+	<font> <h3> Mail D </h3></font>
+  </div>
+
+	<h5>Parolaniz en az 8 karakterli olup;</h5>
+	<ul>
+	  <li><h6> En az bir tane küçük harf [a-z] </h6></li>
+	  <li><h6> En az bir tane büyük harf [A-Z]</h6></li>
+	  <li><h6> En az bir tane rakam [0-9] </h6></li>
+	  <li><h6> En az bir tane özel karakter (?, @, !, #, %, +, -, *, %) </h6></li>
+	</ul>
+
+
+    {% if error %}
+    <font color="red"> <h3> {{ error }} </h3></font> 
+    {% endif %}
+
+
+    <h3>Lütfen üyelik için kullanıcı adı ve bir parola belirleyiniz.</h3>
+
+    <form action="" method="POST" autocomplete="off" name=LOG>
+      <input type="text" name="username" placeholder="kullanıcı adı"/>
+      <input type="password" name="password" placeholder="parola"/>
+      <input type="password" name="password2" placeholder="parola (tekrar)"/>
+      <input type="submit" name="sign-in" value="Üye Ol"/>
+    </form>
+
+  </div>
+</div>
