@@ -1,6 +1,6 @@
 # SPA
 
-Single Password Authentication
+Project Description: https://www.microsoft.com/en-us/research/publication/single-password-authentication/
 
 
 # Extension
